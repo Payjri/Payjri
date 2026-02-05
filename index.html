@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payjri | Restaurant Reservation Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Payjri</div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#booking">Booking</a>
+          <a href="#owners">Owners</a>
+          <a href="#payments">Payments</a>
+        </div>
+        <button class="primary-btn">Get Started</button>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">30-second service guarantee</p>
+          <h1>Reserve your table, pre-order meals, and arrive to a served plate.</h1>
+          <p class="subtitle">
+            Payjri lets guests reserve nearby restaurants by location, set arrival times, and
+            confirm meals with a secure 50% advance payment plus Nu.10 platform fee.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-btn">Create an account</button>
+            <button class="ghost-btn">See how it works</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Quick booking summary</h3>
+          <p>Arrival time: <strong>Today, 7:00 PM</strong></p>
+          <p>Meals selected: <strong>4 items</strong></p>
+          <p class="highlight">Food served within 30 seconds of arrival.</p>
+          <div class="card-footer">
+            <span>Advance due</span>
+            <span>Nu. 1,260</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="features" class="section">
+        <div class="section-header">
+          <h2>User experience built for speed</h2>
+          <p>
+            Sign up with email or phone, verify instantly with OTP, and lock in your meal so
+            the kitchen starts preparing before you arrive.
+          </p>
+        </div>
+        <div class="grid three">
+          <article class="feature-card">
+            <h3>Flexible login</h3>
+            <p>Register with email and phone. OTP verification keeps sign-in secure.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Nearby discovery</h3>
+            <p>Browse restaurants by location, see menus, prices, and photos.</p>
+          </article>
+          <article class="feature-card">
+            <h3>30-minute reminders</h3>
+            <p>Automatic SMS alerts keep bookings top of mind before arrival.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="booking" class="section accent">
+        <div class="section-header">
+          <h2>Booking flow</h2>
+          <p>Plan your visit, reserve a table, and pre-order meals in three steps.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-step">
+            <span>1</span>
+            <div>
+              <h4>Select date &amp; time</h4>
+              <p>Choose the exact arrival time so the kitchen queues your order.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <span>2</span>
+            <div>
+              <h4>Pre-order meals</h4>
+              <p>Pick dishes, add notes, and confirm any dietary preferences.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <span>3</span>
+            <div>
+              <h4>Advance payment</h4>
+              <p>Pay 50% + Nu.10 to secure the booking and preparation slot.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="payments" class="section">
+        <div class="section-header">
+          <h2>Transparent payments</h2>
+          <p>
+            The advance covers half of the order total plus a Nu.10 platform charge. If a
+            booking is canceled, the advance transfers to the restaurant as compensation and
+            includes the platform fee.
+          </p>
+        </div>
+        <div class="grid two">
+          <div class="payment-card">
+            <h3>Advance calculator</h3>
+            <label>
+              Total order amount (Nu.)
+              <input id="orderAmount" type="number" min="0" value="2500" />
+            </label>
+            <div class="payment-summary">
+              <div>
+                <span>50% advance</span>
+                <strong id="advanceAmount">Nu. 1,250</strong>
+              </div>
+              <div>
+                <span>Platform fee</span>
+                <strong>Nu. 10</strong>
+              </div>
+              <div class="total">
+                <span>Total due now</span>
+                <strong id="totalDue">Nu. 1,260</strong>
+              </div>
+            </div>
+          </div>
+          <div class="payment-card">
+            <h3>Cancellation policy</h3>
+            <ul>
+              <li>The advance payment is transferred to the restaurant owner.</li>
+              <li>Platform service charge of ₹10 is included in the payment.</li>
+              <li>Notifications confirm the cancellation and settlement status.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="owners" class="section accent">
+        <div class="section-header">
+          <h2>Restaurant owner toolkit</h2>
+          <p>Owners verify their business, upload menus, and manage orders with ease.</p>
+        </div>
+        <div class="grid three">
+          <article class="feature-card">
+            <h3>Owner verification</h3>
+            <p>Email + OTP signup with license upload. Verification completes within 24 hours.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Menu management</h3>
+            <p>Add dishes, prices, photos, and set availability for each menu item.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Guest support</h3>
+            <p>Share phone and WhatsApp contact details for fast inquiries.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Lightweight blockchain ledger</h2>
+          <p>
+            Each advance payment is stored in a simple JavaScript-based transaction log for
+            transparency.
+          </p>
+        </div>
+        <div class="ledger">
+          <div class="ledger-actions">
+            <input id="ledgerNote" type="text" placeholder="Transaction note (e.g. Booking #1021)" />
+            <button class="primary-btn" id="addBlock">Add transaction</button>
+          </div>
+          <div id="ledgerList" class="ledger-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h4>Payjri</h4>
+        <p>Restaurant reservations that guarantee food within 30 seconds of arrival.</p>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>support@payjri.com</p>
+        <p>+975 1717 1717</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
